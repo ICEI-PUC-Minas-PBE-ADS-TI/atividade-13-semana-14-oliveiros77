@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria da Bola de Ouro</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Carrega a biblioteca Chart.js para fazer o gráfico -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vencedores da Bola de Ouro</h1>
+            <p>Explore o histórico dos atletas consagrados como os melhores jogadores do mundo</p>
+        </header>
+
+        <!-- NOVO: Área do Gráfico de Visualização de Dados -->
+        <section class="grafico-container" style="background-color: #202024; padding: 20px; border-radius: 8px; border: 1px solid #323238; margin-bottom: 40px;">
+            <h2 style="color: #fff; margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Comparativo: Bolas de Ouro por Jogador</h2>
+            <div style="position: relative; height: 300px; width: 100%;">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+        </section>
+
+        <!-- Galeria de Cards -->
+        <main id="container-cards" class="grid-cards"></main>
+    </div>
+
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>

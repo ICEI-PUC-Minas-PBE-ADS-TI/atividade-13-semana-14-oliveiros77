@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Estatísticas da Bola de Ouro</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Painel Estatístico</h1>
+            <p>Análise visual das conquistas dos maiores atletas do mundo</p>
+        </header>
+
+        <div style="margin-bottom: 20px; text-align: center;">
+            <a href="index.html" class="btn-detalhes" style="padding: 10px 20px; display: inline-block;">← Voltar para a
+                Galeria</a>
+        </div>
+
+        <!-- Área do Gráfico de Visualização de Dados -->
+        <section class="grafico-container"
+            style="background-color: #202024; padding: 20px; border-radius: 8px; border: 1px solid #323238; margin-top: 20px;">
+            <h2 style="color: #fff; margin-bottom: 20px; font-size: 1.5rem; text-align: center;">Comparativo: Bolas de
+                Ouro por Jogador</h2>
+            <div style="position: relative; height: 400px; width: 100%;">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+        </section>
+    </div>
+
+    <!-- Script focado em carregar o gráfico -->
+    <script>
+        const API_BASE_URL = "http://localhost:3000/jogadores";
+
+        async function carregarGrafico() {
+            try {
+                const response = await fetch(API_BASE_URL);
+                const jogadores = await response.json();
+
+                const ctx = document.getElementById('meuGrafico').getContext('2d');
+                const nomes = jogadores.map(j => j.titulo);
+                const quantidades = jogadores.map(j => j.valor);
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: nomes,
+                        datasets: [{
+                            label: 'Total de Bolas de Ouro',
+                            data: quantidades,
+                            backgroundColor: '#e1b12c',
+                            borderColor: '#cbad1b',
+                            borderWidth: 1,
+                            borderRadius: 4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: '#323238' },
+                                ticks: { color: '#a4a4ac', stepSize: 1 }
+                            },
+                            x: { ticks: { color: '#a4a4ac' } }
+                        }
+                    }
+                });
+            } catch (error) {
+                console.error("Erro ao carregar o gráfico:", error);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", carregarGrafico);
+    </script>
+</body>
+
+</html>

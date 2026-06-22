@@ -1,18 +1,164 @@
 {
-  "usuarios": [
+  "jogadores": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Lionel Messi",
+      "descricaoCurta": "O maior vencedor da história da premiação com 8 Bolas de Ouro.",
+      "descricaoCompleta": "Lionel Messi dispensa apresentações. Gênio da camisa 10, conquistou o topo do futebol mundial múltiplas vezes atuando pelo Barcelona e coroou sua trajetória lendária liderando a Argentina no título da Copa do Mundo de 2022.",
+      "imagem": "https://i.pinimg.com/736x/fd/86/6b/fd866bdd13349b52c466f8adea60314f.jpg",
+      "categoria": "Atacante",
+      "valor": 8,
+      "tags": ["Inter Miami", "Argentina", "Barcelona", "Canhoto"],
+      "destaque": true,
+      "conquistas": [
+        { "ano": "2009", "segundo": "Cristiano Ronaldo", "terceiro": "Xavi" },
+        { "ano": "2010", "segundo": "Andrés Iniesta", "terceiro": "Xavi" },
+        { "ano": "2011", "segundo": "Cristiano Ronaldo", "terceiro": "Xavi" },
+        { "ano": "2012", "segundo": "Cristiano Ronaldo", "terceiro": "Andrés Iniesta" },
+        { "ano": "2015", "segundo": "Cristiano Ronaldo", "terceiro": "Neymar" },
+        { "ano": "2019", "segundo": "Virgil van Dijk", "terceiro": "Cristiano Ronaldo" },
+        { "ano": "2021", "segundo": "Robert Lewandowski", "terceiro": "Jorginho" },
+        { "ano": "2023", "segundo": "Erling Haaland", "terceiro": "Kylian Mbappé" }
+      ]
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "Cristiano Ronaldo",
+      "descricaoCurta": "A máquina de gols portuguesa detentora de 5 Bolas de Ouro.",
+      "descricaoCompleta": "Cristiano Ronaldo construiu um império baseado em disciplina, força física e faro de gol implacável. Conquistou suas premiações brilhando intensamente pelo Manchester United e quebrando todos os recordes possíveis no Real Madrid.",
+      "imagem": "https://www.mundolusiada.com.br/wp-content/uploads/2017/12/CR7_BolaOuro.jpg",
+      "categoria": "Atacante",
+      "valor": 5,
+      "tags": ["Al-Nassr", "Portugal", "Real Madrid", "Artilheiro"],
+      "destaque": true,
+      "conquistas": [
+        { "ano": "2008", "segundo": "Lionel Messi", "terceiro": "Fernando Torres" },
+        { "ano": "2013", "segundo": "Lionel Messi", "terceiro": "Franck Ribéry" },
+        { "ano": "2014", "segundo": "Lionel Messi", "terceiro": "Manuel Neuer" },
+        { "ano": "2016", "segundo": "Lionel Messi", "terceiro": "Antoine Griezmann" },
+        { "ano": "2017", "segundo": "Lionel Messi", "terceiro": "Neymar" }
+      ]
+    },
+    {
+      "id": 3,
+      "titulo": "Ronaldinho Gaúcho",
+      "descricaoCurta": "O bruxo que uniu a magia do futebol com o topo do mundo em 2005.",
+      "descricaoCompleta": "Ronaldinho Gaúcho fez o planeta terra sorrir jogando futebol. Sua Bola de Ouro em 2005 foi o ápice de um jogador que transformava partidas em espetáculos artísticos de dribles, elásticos e passes vertiginosos pelo Barcelona.",
+      "imagem": "https://i.pinimg.com/736x/9e/65/8b/9e658b6723ca74e109499ff68ed2d4cd.jpg",
+      "categoria": "Meio-Campista",
+      "valor": 1,
+      "tags": ["Brasil", "Barcelona", "Bruxo", "Driblador"],
+      "destaque": true,
+      "conquistas": [
+        { "ano": "2005", "segundo": "Frank Lampard", "terceiro": "Steven Gerrard" }
+      ]
+    },
+    {
+      "id": 4,
+      "titulo": "Zinedine Zidane",
+      "descricaoCurta": "A elegância em forma de futebol, vencedor da edição de 1998.",
+      "descricaoCompleta": "Zidane regia o meio-campo com uma classe poucas vezes vista na história do esporte. Dono de um controle de bola perfeito, levou a França ao título mundial em 1998 e faturou a prestigiada premiação individual no mesmo ano.",
+      "imagem": "https://i.pinimg.com/736x/56/23/45/562345e65834af6a8db26b247ac217f7.jpg",
+      "categoria": "Meio-Campista",
+      "valor": 1,
+      "tags": ["França", "Real Madrid", "Juventus", "Maestro"],
+      "destaque": false,
+      "conquistas": [
+        { "ano": "1998", "segundo": "Davor Šuker", "terceiro": "Ronaldo Fenômeno" }
+      ]
+    },
+    {
+      "id": 5,
+      "titulo": "Kaká",
+      "descricaoCurta": "O último brasileiro a ser eleito o melhor do planeta, em 2007.",
+      "descricaoCompleta": "Em 2007, ninguém foi capaz de parar Kaká. Com arrancadas potentes, visão de jogo cirúrgica e finalizações perfeitas, ele destruiu as defesas europeias e liderou o Milan na conquista da Champions League antes de levar o prêmio.",
+      "imagem": "https://pbs.twimg.com/media/F3xmePmXEAA9XMT.jpg",
+      "categoria": "Meio-Campista",
+      "valor": 1,
+      "tags": ["Brasil", "Milan", "Arrancada", "Meia"],
+      "destaque": true,
+      "conquistas": [
+        { "ano": "2007", "segundo": "Cristiano Ronaldo", "terceiro": "Lionel Messi" }
+      ]
+    },
+    {
+      "id": 6,
+      "titulo": "Ronaldo Fenômeno",
+      "descricaoCurta": "O atacante mais devastador da história, eleito em 1997 e 2002.",
+      "descricaoCompleta": "Ronaldo mudou a forma de se jogar na posição de centroavante. Unindo velocidade assustadora e finalização impecável, superou graves lesões no joelho para carimbar sua segunda Bola de Ouro após liderar o Penta do Brasil.",
+      "imagem": "https://img.vavel.com/b/R9-1.jpg",
+      "categoria": "Atacante",
+      "valor": 2,
+      "tags": ["Brasil", "Real Madrid", "Inter de Milão", "Fenômeno"],
+      "destaque": true,
+      "conquistas": [
+        { "ano": "1997", "segundo": "Predrag Mijatović", "terceiro": "Zinedine Zidane" },
+        { "ano": "2002", "segundo": "Roberto Carlos", "terceiro": "Oliver Kahn" }
+      ]
+    },
+    {
+      "id": 7,
+      "titulo": "Luka Modrić",
+      "descricaoCurta": "O maestro croata que quebrou a soberania da era Messi-Cristiano em 2018.",
+      "descricaoCompleta": "Modrić fez história ao vencer o prêmio inesquecível em 2018. Sendo o motor do Real Madrid multicampeão e carregando a Croácia até uma final inédita de Copa do Mundo, seu controle de jogo foi coroado no topo do planeta.",
+      "imagem": "https://pbs.twimg.com/media/G1esKvDXAAA28Qp.jpg",
+      "categoria": "Meio-Campista",
+      "valor": 1,
+      "tags": ["Croácia", "Real Madrid", "Resistência", "Visão"],
+      "destaque": false,
+      "conquistas": [
+        { "ano": "2018", "segundo": "Cristiano Ronaldo", "terceiro": "Antoine Griezmann" }
+      ]
+    },
+    {
+      "id": 8,
+      "titulo": "Karim Benzema",
+      "descricaoCurta": "O atacante francês que teve um ano mágico e incontestável em 2022.",
+      "descricaoCompleta": "Benzema assunto o protagonismo absoluto do Real Madrid após anos atuando como garçom. Sua campanha na Champions League de 2022 recheada de hat-tricks e gols decisivos rendeu a ele uma premiação unânime.",
+      "imagem": "https://pubimg.band.uol.com.br/files/b0fc733cd7df23b21c3e.png",
+      "categoria": "Atacante",
+      "valor": 1,
+      "tags": ["França", "Al-Ittihad", "Real Madrid", "Pivô"],
+      "destaque": false,
+      "conquistas": [
+        { "ano": "2022", "segundo": "Sadio Mané", "terceiro": "Kevin De Bruyne" }
+      ]
+    },
+    {
+      "id": 9,
+      "titulo": "Fabio Cannavaro",
+      "descricaoCurta": "O raríssimo caso de um zagueiro vencendo o prêmio, em 2006.",
+      "descricaoCompleta": "Vencer a Bola de Ouro sendo um defensor é para poucos. Cannavaro conseguiu essa façanha mítica em 2006 após capitanear uma Itália cirúrgica e intransponível no título da Copa do Mundo da Alemanha.",
+      "imagem": "https://pbs.twimg.com/media/G1dEI62WEAEFnSN.jpg",
+      "categoria": "Defensor",
+      "valor": 1,
+      "tags": ["Itália", "Juventus", "Real Madrid", "Zagueiro"],
+      "destaque": false,
+      "conquistas": [
+        { "ano": "2006", "segundo": "Gianluigi Buffon", "terceiro": "Thierry Henry" }
+      ]
+    },
+    {
+      "id": 10,
+      "titulo": "Luis Figo",
+      "descricaoCurta": "A ala criativa de Portugal coroada no ano 2000.",
+      "descricaoCompleta": "Luis Figo combinava uma capacidade de drible em velocidade com cruzamentos cirúrgicos. O ano de 2000 marcou sua polêmica transferência do Barcelona para o Real Madrid e a consagração máxima como melhor do mundo.",
+      "imagem": "https://i.pinimg.com/736x/1c/b2/04/1cb204148544ee3d48d550da1c42034c.jpg",
+      "categoria": "Meio-Campista",
+      "valor": 1,
+      "tags": ["Portugal", "Real Madrid", "Habilidade", "Extremo"],
+      "destaque": false,
+      "conquistas": [
+        { "ano": "2000", "segundo": "Zinedine Zidane", "terceiro": "Andriy Shevchenko" }
+      ]
     }
+  ],
+  "categorias": [
+    { "id": "1", "nome": "Atacante" },
+    { "id": "2", "nome": "Meio-Campista" },
+    { "id": "3", "nome": "Defensor" }
+  ],
+  "comentarios": [
+    { "id": 1, "jogadorId": 1, "usuario": "Lucas Silva", "texto": "Merecido demais, o maior de todos!" }
   ]
 }

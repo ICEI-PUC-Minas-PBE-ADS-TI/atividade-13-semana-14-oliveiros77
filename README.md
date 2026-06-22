@@ -9,14 +9,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações Gerais
 
-- Nome:
-- Matrícula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Oliveiros
+- Matrícula: 1662959
+- Proposta de projeto escolhida: Galeria 
+- Breve descrição sobre seu projeto:Uma galeria interativa que lista e detalha os principais vencedores do prêmio Bola de Ouro da France Football, consumindo dados de uma API simulada com JSON Server.
 
 **Print da tela com a implementação**
 
-<< Coloque aqui uma breve explicação da implementação feita nesta etapa>>
+Para atender aos critérios de agrupamento e interpretação criativa de dados, integrei a biblioteca Chart.js à página inicial. A aplicação realiza um mapeamento dinâmico dos dados vindos do backend e renderiza um gráfico de barras responsivo comparando visualmente a quantidade de títulos de cada jogador, facilitando a análise estatística do usuário diretamente na interface escura da aplicação.
 
 <<  COLOQUE A IMAGEM DA TELA 1 AQUI >>
 
