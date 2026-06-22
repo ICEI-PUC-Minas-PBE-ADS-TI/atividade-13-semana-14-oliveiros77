@@ -18,6 +18,6 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 Para atender aos critérios de agrupamento e interpretação criativa de dados, integrei a biblioteca Chart.js à página inicial. A aplicação realiza um mapeamento dinâmico dos dados vindos do backend e renderiza um gráfico de barras responsivo comparando visualmente a quantidade de títulos de cada jogador, facilitando a análise estatística do usuário diretamente na interface escura da aplicação.
 
-<<  COLOQUE A IMAGEM DA TELA 1 AQUI >>
+![alt text](image.png)
 
-<<  COLOQUE A IMAGEM DA TELA 2 AQUI >>
+![alt text](image-1.png)
