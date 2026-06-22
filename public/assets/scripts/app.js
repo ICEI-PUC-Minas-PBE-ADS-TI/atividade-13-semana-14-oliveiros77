@@ -7,10 +7,9 @@ async function carregarDados() {
         
         const jogadores = await response.json();
         
-        // 1. Renderiza os Cards na Tela
-        renderizarCards(jogadores);
+        jogadores.sort((a, b) => b.valor - a.valor);
         
-        // 2. Cria o Gráfico Interativo solicitado na Atividade
+        renderizarCards(jogadores);
         criarGrafico(jogadores);
 
     } catch (error) {
@@ -43,18 +42,17 @@ function renderizarCards(jogadores) {
 function criarGrafico(jogadores) {
     const ctx = document.getElementById('meuGrafico').getContext('2d');
     
-    // Organiza os dados para o gráfico: nomes e quantidade de títulos
     const nomes = jogadores.map(j => j.titulo);
     const quantidades = jogadores.map(j => j.valor);
 
     new Chart(ctx, {
-        type: 'bar', // Gráfico de barras
+        type: 'bar',
         data: {
             labels: nomes,
             datasets: [{
                 label: 'Total de Bolas de Ouro',
                 data: quantidades,
-                backgroundColor: '#e1b12c', // Cor dourada combinando com seu tema
+                backgroundColor: '#e1b12c',
                 borderColor: '#cbad1b',
                 borderWidth: 1,
                 borderRadius: 4
@@ -65,13 +63,13 @@ function criarGrafico(jogadores) {
             maintainAspectRatio: false,
             plugins: {
                 legend: {
-                    display: false // Esconde a legenda padrão para ficar mais limpo
+                    display: false
                 }
             },
             scales: {
                 y: {
                     beginAtZero: true,
-                    grid: { color: '#323238' }, // Cor das linhas de grade combinando com o tema escuro
+                    grid: { color: '#323238' },
                     ticks: { color: '#a4a4ac', stepSize: 1 }
                 },
                 x: {
@@ -83,5 +81,4 @@ function criarGrafico(jogadores) {
     });
 }
 
-// Inicia a aplicação assim que a página carregar
 document.addEventListener("DOMContentLoaded", carregarDados);
